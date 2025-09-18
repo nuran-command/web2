@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table and Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="grades-title">Student Grades</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ilnur</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Elkham</td>
+        <td>Science</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Yernur</td>
+        <td>History</td>
+        <td>C</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="form_h2">Feedback Form</h2>
+  <form id="feedback-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <label for="role">Role:</label>
+    <select id="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <p>Do you like this course?</p>
+    <input type="radio" name="like" value="Yes"> Yes
+    <input type="radio" name="like" value="No"> No<br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments"></textarea><br><br>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+</body>
+</html>
